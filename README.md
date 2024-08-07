@@ -22,7 +22,7 @@ inss/
 │   ├── main/
 │   │   ├── java/
 │   │   │   └── com/
-│   │   │       └── example/
+│   │   │       └── ekan/
 │   │   │           └── inss/
 │   │   │               ├── InssApplication.java
 │   │   │               ├── config/
