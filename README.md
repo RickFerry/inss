@@ -24,7 +24,7 @@ inss/
 │   │   │   └── com/
 │   │   │       └── ekan/
 │   │   │           └── inss/
-│   │   │               ├── InssApplication.java
+│   │   │               ├── Application.java
 │   │   │               ├── config/
 │   │   │               │   ├── CorsConfig.java
 │   │   │               │   ├── SecurityConfig.java
