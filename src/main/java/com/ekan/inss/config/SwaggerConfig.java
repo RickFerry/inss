@@ -15,7 +15,7 @@ public class SwaggerConfig {
     public Docket api() {
         return new Docket(DocumentationType.SWAGGER_2)
                 .select()
-                .apis(RequestHandlerSelectors.basePackage("com.example.inss.controller"))
+                .apis(RequestHandlerSelectors.basePackage("com.ekan.inss.controller"))
                 .paths(PathSelectors.any())
                 .build();
     }
