@@ -46,7 +46,7 @@ inss/
 │   │   │                   └── ModelMapperConfig.java
 │   │   └── resources/
 │   │       ├── application.properties
-│   │       └── data.sql
+│   │       └── import.sql
 ├── pom.xml
 ```
 
