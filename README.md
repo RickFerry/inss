@@ -1,4 +1,3 @@
-#### `README.md`
 ```markdown
 # INSS API
 
@@ -22,9 +21,9 @@ inss/
 │   ├── main/
 │   │   ├── java/
 │   │   │   └── com/
-│   │   │       └── ekan/
+│   │   │       └── example/
 │   │   │           └── inss/
-│   │   │               ├── Application.java
+│   │   │               ├── InssApplication.java
 │   │   │               ├── config/
 │   │   │               │   ├── CorsConfig.java
 │   │   │               │   ├── SecurityConfig.java
@@ -47,7 +46,7 @@ inss/
 │   │   │                   └── ModelMapperConfig.java
 │   │   └── resources/
 │   │       ├── application.properties
-│   │       └── import.sql
+│   │       └── data.sql
 ├── pom.xml
 ```
 
@@ -56,10 +55,10 @@ inss/
 - Java 11
 - Spring Boot 2.5
 - H2 Database
-- ModelMapper
 - JPA (Hibernate)
 - Swagger 2
 - Spring Security
+- ModelMapper
 
 ## Configuração do Ambiente
 
@@ -81,6 +80,22 @@ Os endpoints documentados podem ser acessados através do Swagger:
 ```
 http://localhost:8080/swagger-ui/
 ```
+
+## Testando a API via Swagger
+
+1. Após iniciar a aplicação, abra seu navegador e vá para [http://localhost:8080/swagger-ui/](http://localhost:8080/swagger-ui/).
+2. Você verá a interface do Swagger com todos os endpoints disponíveis.
+3. Para testar os endpoints que requerem autenticação, clique no botão `Authorize` no topo da página do Swagger.
+4. Insira as credenciais de autenticação. O formato padrão é Basic Auth, então você precisará inserir o nome de usuário e senha configurados no `application.properties`:
+    - **Username:** `user`
+    - **Password:** `password`
+
+    ```plaintext
+    spring.security.user.name=user
+    spring.security.user.password=password
+    ```
+
+    Após a autenticação, você poderá testar todos os endpoints protegidos.
 
 ## Exemplos de Uso
 
