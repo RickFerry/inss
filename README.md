@@ -21,7 +21,7 @@ inss/
 │   ├── main/
 │   │   ├── java/
 │   │   │   └── com/
-│   │   │       └── example/
+│   │   │       └── ekan/
 │   │   │           └── inss/
 │   │   │               ├── InssApplication.java
 │   │   │               ├── config/
@@ -157,3 +157,4 @@ A autenticação é feita utilizando Basic Auth. As credenciais podem ser config
 
 Distribuído sob a licença MIT. Veja `LICENSE` para mais informações.
 ```
+
